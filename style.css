@@ -58,11 +58,6 @@ ul.chacha {
   padding: 0;
   position: relative;
 }
-ul.chacha1 li a,
-ul.chacha li a {
-  color: #333;
-  text-decoration: none;
-}
 
 ul.concon {
   width: 400px;
@@ -196,35 +191,31 @@ ul.chacha1:hover ul.concon1 {
   color: brown;
 }
 
-.cl{
+.cl {
   color: #898989;
 }
-.social{
+.social {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.social i{
+.social i {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.social i:hover{
+.social i:hover {
   background: brown;
   color: #fff;
 }
 
-.register{
-display: none;
+.register {
+  display: none;
 }
-
-
-
 
 .menu-mb,
 .icon i {
