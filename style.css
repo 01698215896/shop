@@ -103,12 +103,12 @@ ul.chacha1:hover ul.concon1 {
 }
 
 /* login */
-.account-title{
+.account-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #a9a9a9;
-  padding-bottom:15px ;
+  padding-bottom: 15px;
 }
 .lg_res {
   display: flex;
@@ -585,9 +585,8 @@ ul.chacha1:hover ul.concon1 {
     font-size: 18px;
   }
   ul.concon1 {
-    width: 400px;
+    width: 350px;
     top: 65px;
-    right: 5px;
+    right: 10px;
   }
- 
 }
