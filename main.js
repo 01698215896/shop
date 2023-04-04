@@ -12,17 +12,26 @@ register.addEventListener("click", () => {
 });
 
 // reponsive trên mobil
+// reponsive trên mobil
 let chacha1 = document.querySelector(".chacha1");
 let concon1 = document.querySelector(".concon1");
-function toggleConcon1() {
-  if (isConcon1Visible) {
-    concon1.style.transform = "translateX(-100%)";
-    isConcon1Visible = false;
-  } else {
-    concon1.style.transform = "translateX(0)";
-    isConcon1Visible = true;
-  }
+let chacha = document.querySelector(".chacha");
+let concon = document.querySelector(".concon");
+let menuMb = document.querySelector(".menu-mb");
+let menu = document.querySelector(".menu");
+let isConcon1Visible = false;
+
+function toggleConcon1(name) {
+    if (isConcon1Visible) {
+      name.style.transform = "translateX(200%)";
+      isConcon1Visible = false;
+    } else {
+      name.style.transform = "translateX(0)";
+      isConcon1Visible = true;
+    }
 }
 
-chacha1.addEventListener("click", toggleConcon1);
-chacha1.addEventListener("touchend", toggleConcon1);
+chacha1.addEventListener("touchend", () => toggleConcon1(concon1));
+
+chacha.addEventListener("touchend", () => toggleConcon1(concon));
+menuMb.addEventListener("touchend", () => toggleConcon1(menu));
