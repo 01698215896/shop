@@ -22,3 +22,6 @@ let concon1 = document.querySelector('.concon1')
 account.addEventListener('click',()=>{
     concon1.style.transform = 'translateX(0)';
 })
+account.addEventListener('touchend',()=>{
+    concon1.style.transform = 'translateX(0)';
+})
