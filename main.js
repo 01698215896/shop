@@ -14,15 +14,15 @@ register.addEventListener("click", () => {
 // reponsive trên mobil
 let chacha1 = document.querySelector(".chacha1");
 let concon1 = document.querySelector(".concon1");
-function toggleConcon1(id) {
+function toggleConcon1() {
   if (isConcon1Visible) {
-    id.style.transform = "translateX(200%)";
+    concon1.style.transform = "translateX(-100%)";
     isConcon1Visible = false;
   } else {
-    id.style.transform = "translateX(0)";
+    concon1.style.transform = "translateX(0)";
     isConcon1Visible = true;
   }
 }
 
-chacha1.addEventListener("click", toggleConcon1());
-chacha1.addEventListener("touchend", toggleConcon1());
+chacha1.addEventListener("click", toggleConcon1);
+chacha1.addEventListener("touchend", toggleConcon1);
