@@ -19,6 +19,9 @@ let chacha = document.querySelector(".chacha");
 let concon = document.querySelector(".concon");
 let menuMb = document.querySelector(".menu-mb");
 let menu = document.querySelector(".menu");
+let seach = document.querySelector(".seach");
+let timkiem = document.querySelector(".timkiem");
+
 let isConcon1Visible = false;
 
 function toggleConcon1(name) {
@@ -35,3 +38,4 @@ chacha1.addEventListener("touchend", () => toggleConcon1(concon1));
 
 chacha.addEventListener("touchend", () => toggleConcon1(concon));
 menuMb.addEventListener("touchend", () => toggleConcon1(menu));
+seach.addEventListener("touchend", () => toggleConcon1(timkiem));
