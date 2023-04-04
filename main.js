@@ -19,9 +19,9 @@ register.addEventListener('click',()=>{
 // reponsive trên mobil
 let chacha1 = document.querySelector('.chacha1');
 let concon1 = document.querySelector('.concon1')
-account.addEventListener('click',()=>{
+chacha1.addEventListener('click',()=>{
     concon1.style.transform = 'translateX(0)';
 })
-account.addEventListener('touchend',()=>{
+chacha1.addEventListener('touchend',()=>{
     concon1.style.transform = 'translateX(0)';
 })
