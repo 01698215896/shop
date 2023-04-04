@@ -61,7 +61,6 @@ ul.chacha {
 
 ul.concon {
   width: 400px;
-  height: 100vh;
   background-color: #fff;
   position: absolute;
   border: 1px solid #a9a9a9;
@@ -70,6 +69,7 @@ ul.concon {
   top: 60px;
   transform: translateX(150%);
   transition: 0.3s ease-in-out;
+  padding: 15px;
 }
 
 ul.concon::before {
@@ -89,11 +89,11 @@ ul.chacha:hover ul.concon {
 
 ul.concon1 {
   width: 400px;
+  top: -20px;
+  right: -50px;
   background-color: #fff;
   position: absolute;
   border: 1px solid #a9a9a9;
-  top: -20px;
-  right: -50px;
   padding: 15px;
   transform: translateX(150%);
   transition: 0.3s ease-in-out;
@@ -103,7 +103,13 @@ ul.chacha1:hover ul.concon1 {
 }
 
 /* login */
-
+.account-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #a9a9a9;
+  padding-bottom:15px ;
+}
 .lg_res {
   display: flex;
   justify-content: space-evenly;
@@ -512,6 +518,11 @@ ul.chacha1:hover ul.concon1 {
   .product1 {
     grid-template-columns: 1fr;
   }
+  ul.concon1 {
+    width: 400px;
+    top: 65px;
+    right: 10px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -574,6 +585,9 @@ ul.chacha1:hover ul.concon1 {
     font-size: 18px;
   }
   ul.concon1 {
-    width: 100%;
+    width: 400px;
+    top: 65px;
+    right: 5px;
   }
+ 
 }

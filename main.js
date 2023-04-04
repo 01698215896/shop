@@ -12,3 +12,13 @@ register.addEventListener('click',()=>{
     hideRes.style.display = 'block';
 
 })
+
+
+
+
+// reponsive trên mobil
+let chacha1 = document.querySelector('.chacha1');
+let concon1 = document.querySelector('.concon1')
+account.addEventListener('click',()=>{
+    concon1.style.transform = 'translateX(0)';
+})
