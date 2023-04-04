@@ -60,7 +60,7 @@ ul.chacha {
 }
 
 ul.concon {
-  width: 400px;
+  width: 600px;
   background-color: #fff;
   position: absolute;
   border: 1px solid #a9a9a9;
@@ -588,5 +588,8 @@ ul.chacha1:hover ul.concon1 {
     width: 350px;
     top: 65px;
     right: 10px;
+  }
+  ul.concon {
+    width: 350px;
   }
 }
