@@ -18,19 +18,20 @@ let chacha = document.querySelector(".chacha");
 let concon = document.querySelector(".concon");
 let menuMb = document.querySelector(".menu-mb");
 let menu = document.querySelector(".menu");
-function toggleConcon1(id) {
+let isConcon1Visible = false;
+
+function toggleConcon1() {
     if (isConcon1Visible) {
-      id.style.transform = "translateX(200%)";
+      concon1.style.transform = "translateX(200%)";
       isConcon1Visible = false;
     } else {
-      id.style.transform = "translateX(0)";
+      concon1.style.transform = "translateX(0)";
       isConcon1Visible = true;
     }
-  }
-  
+}
 
-chacha1.addEventListener("click", toggleConcon1(concon1));
-chacha1.addEventListener("touchend", toggleConcon1(concon1));
+chacha1.addEventListener("click", () => toggleConcon1());
+chacha1.addEventListener("touchend", () => toggleConcon1());
 
-chacha.addEventListener("touchend", toggleConcon1(concon));
-menuMb.addEventListener("touchend", toggleConcon1(menu));
+chacha.addEventListener("touchend", () => toggleConcon1(concon));
+menuMb.addEventListener("touchend", () => toggleConcon1(menu));
