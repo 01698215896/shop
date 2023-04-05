@@ -12,6 +12,7 @@ register.addEventListener("click", () => {
 });
 
 // reponsive trên mobil
+// reponsive trên mobil
 let chacha1 = document.querySelector(".chacha1");
 let concon1 = document.querySelector(".concon1");
 let chacha = document.querySelector(".chacha");
@@ -33,7 +34,7 @@ function toggleConcon1(name) {
   }
 }
 
-chacha1.addEventListener("touchend", () => toggleConcon1(concon1));
+chacha1.addEventListener("click", () => toggleConcon1(concon1));
 
 chacha.addEventListener("touchend", () => toggleConcon1(concon));
 menuMb.addEventListener("touchend", () => toggleConcon1(menu));
@@ -44,18 +45,12 @@ let pmp = document.querySelectorAll(".product2");
 let showPay = document.querySelector(".concon");
 
 pmp.forEach((product) => {
-  let button = product.querySelector("button");
-
+  let button = product.querySelector(".bamgiohang");
   button.addEventListener("click", () => {
     let name = product.querySelector(".name11").textContent;
     let img = product.querySelector(".hinh img").src;
     let price = product.querySelector(".price").textContent;
-    let arr = {
-      name: name,
-      img: img,
-      price: price,
-    };
-    localStorage.setItem("product",JSON.stringify(arr));
+  
     let cart = `
     <div class="listpay">
                           <div class="card mb-3">
@@ -97,5 +92,22 @@ pmp.forEach((product) => {
                         </div>
     `;
     showPay.innerHTML += cart;
+  });
+});
+
+// link sang trang product
+pmp.forEach((product) => {
+  let button = product.querySelector(".bamproduct");
+  button.addEventListener("click", () => {
+    let name = product.querySelector(".name11").textContent;
+    let img = product.querySelector(".hinh img").src;
+    let price = product.querySelector(".price").textContent;
+    let arr = {
+      name: name,
+      img: img,
+      price: price,
+    };
+    localStorage.setItem("product", JSON.stringify(arr));
+    window.location.href = "product/product.html";
   });
 });
