@@ -12,7 +12,6 @@ register.addEventListener("click", () => {
 });
 
 // reponsive trên mobil
-// reponsive trên mobil
 let chacha1 = document.querySelector(".chacha1");
 let concon1 = document.querySelector(".concon1");
 let chacha = document.querySelector(".chacha");
@@ -34,11 +33,11 @@ function toggleConcon1(name) {
   }
 }
 
-chacha1.addEventListener("touch", () => toggleConcon1(concon1));
+chacha1.addEventListener("touchend", () => toggleConcon1(concon1));
 
-chacha.addEventListener("touch", () => toggleConcon1(concon));
-menuMb.addEventListener("touch", () => toggleConcon1(menu));
-seach.addEventListener("touch", () => toggleConcon1(timkiem));
+chacha.addEventListener("touchend", () => toggleConcon1(concon));
+menuMb.addEventListener("touchend", () => toggleConcon1(menu));
+seach.addEventListener("touchend", () => toggleConcon1(timkiem));
 
 // show pay item
 let pmp = document.querySelectorAll(".product2");
@@ -56,7 +55,7 @@ pmp.forEach((product) => {
       img: img,
       price: price,
     };
-    // localStorage.setItem("product",JSON.stringify(arr));
+    localStorage.setItem("product",JSON.stringify(arr));
     let cart = `
     <div class="listpay">
                           <div class="card mb-3">
