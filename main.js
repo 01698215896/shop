@@ -34,11 +34,11 @@ function toggleConcon1(name) {
   }
 }
 
-chacha1.addEventListener("touchend", () => toggleConcon1(concon1));
+chacha1.addEventListener("touch", () => toggleConcon1(concon1));
 
-chacha.addEventListener("touchend", () => toggleConcon1(concon));
-menuMb.addEventListener("touchend", () => toggleConcon1(menu));
-seach.addEventListener("touchend", () => toggleConcon1(timkiem));
+chacha.addEventListener("touch", () => toggleConcon1(concon));
+menuMb.addEventListener("touch", () => toggleConcon1(menu));
+seach.addEventListener("touch", () => toggleConcon1(timkiem));
 
 // show pay item
 let pmp = document.querySelectorAll(".product2");
@@ -62,9 +62,7 @@ pmp.forEach((product) => {
                           <div class="card mb-3">
                             <div class="row g-0">
                               <div
-                                class="col-md-4 overflow-hidden"
-                                style="max-width: 180px; height: 180px"
-                              >
+                                class="col-md-4 overflow-hidden resmb"                              >
                                 <img
                                   src="${img}"
                                   class="img-fluid rounded-start"
@@ -84,11 +82,15 @@ pmp.forEach((product) => {
                                     below as a natural lead-in to additional
                                     content. This content is a little bit longer.
                                   </p>
+                                  <div class="btn_buy">
                                   <p class="card-text">
                                     <small class="text-body-secondary"
                                       >${price}</small
                                     >
                                   </p>
+                                  <button class="mua1">Buy Now</button>
+                                  </div>
+                                  
                                 </div>
                               </div>
                             </div>

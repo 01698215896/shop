@@ -61,6 +61,9 @@ ul.chacha {
 
 ul.concon {
   width: 600px;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
   background-color: #fff;
   position: absolute;
   border: 1px solid #a9a9a9;
@@ -89,6 +92,7 @@ ul.chacha:hover ul.concon {
 
 ul.concon1 {
   width: 400px;
+  height: 100vh;
   top: -20px;
   right: -50px;
   background-color: #fff;
@@ -473,6 +477,28 @@ ul.chacha1:hover ul.concon1 {
   background: url(img/gt1.jpg) no-repeat center/cover;
 }
 
+.btn_buy {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn_buy button {
+  padding: 5px 20px;
+  background: brown;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid brown;
+  transition: 0.3s ease-out;
+}
+
+.btn_buy button:hover {
+  background: none;
+  color: brown;
+}
+
+
+
 @media screen and (max-width: 820px) {
   .show_pro {
     grid-template-columns: 50% 50%;
@@ -592,4 +618,9 @@ ul.chacha1:hover ul.concon1 {
   ul.concon {
     width: 350px;
   }
+  .resmb img {
+    width: 50px;
+    height: 50px;
+  }
+ 
 }
