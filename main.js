@@ -34,7 +34,7 @@ function toggleConcon1(name) {
   }
 }
 
-chacha1.addEventListener("click", () => toggleConcon1(concon1));
+chacha1.addEventListener("touch", () => toggleConcon1(concon1));
 
 chacha.addEventListener("touchend", () => toggleConcon1(concon));
 menuMb.addEventListener("touchend", () => toggleConcon1(menu));
@@ -50,7 +50,7 @@ pmp.forEach((product) => {
     let name = product.querySelector(".name11").textContent;
     let img = product.querySelector(".hinh img").src;
     let price = product.querySelector(".price").textContent;
-  
+
     let cart = `
     <div class="listpay">
                           <div class="card mb-3">
@@ -110,4 +110,32 @@ pmp.forEach((product) => {
     localStorage.setItem("product", JSON.stringify(arr));
     window.location.href = "product/product.html";
   });
+});
+
+// build database
+
+let bamlg = document.querySelector("#bamlg");
+let apiLogin = "http://localhost:3000/user";
+
+let callApi = async (callback) => {
+  let laydulieu = await fetch(apiLogin).then((res) => {
+    return res.json().then(callback);
+  });
+  return laydulieu;
+};
+
+let handleLogin = (data) => {
+  let iplogin = document.querySelector("#iplogin").value;
+  let ipplogin = document.querySelector("#ipplogin").value;
+  data.forEach((data) => {
+    if (data.username == iplogin && data.password == ipplogin) {
+      alert(" xin chào " + iplogin +" " + "đến với cửa hàng");
+    }else{
+      alert("username or password khong dung");
+    }
+  });
+};
+
+bamlg.addEventListener("click", () => {
+  callApi(handleLogin);
 });
