@@ -36,9 +36,9 @@ function toggleConcon1(name) {
 
 chacha1.addEventListener("touch", () => toggleConcon1(concon1));
 
-chacha.addEventListener("touchend", () => toggleConcon1(concon));
-menuMb.addEventListener("touchend", () => toggleConcon1(menu));
-seach.addEventListener("touchend", () => toggleConcon1(timkiem));
+chacha.addEventListener("touch", () => toggleConcon1(concon));
+menuMb.addEventListener("touch", () => toggleConcon1(menu));
+seach.addEventListener("touch", () => toggleConcon1(timkiem));
 
 // show pay item
 let pmp = document.querySelectorAll(".product2");
