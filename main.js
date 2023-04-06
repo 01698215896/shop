@@ -35,7 +35,7 @@ function toggleConcon1(name) {
 }
 
 chacha1.addEventListener("touch", () => {
-  toggleConcon1(concon1);
+  toggleConcon1(concon1)
   let login = document.querySelector("#login");
   let register = document.querySelector("#register");
   let hideRes = document.querySelector(".register");
